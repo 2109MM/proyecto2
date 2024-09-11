@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dirección IP</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Dirección IP</h1>
+        </div>
+    </header>
+
+    <nav>
+        <div class="container">
+            <ul>
+                <li><button class="tab-button" onclick="openTab('definicion')">Definición</button></li>
+                <li><button class="tab-button" onclick="openTab('historia')">Historia</button></li>
+                <li><button class="tab-button" onclick="openTab('caracteristicas')">Características</button></li>
+                <li><button class="tab-button" onclick="openTab('ventajas-desventajas')">Ventajas y Desventajas</button></li>
+                <li><button class="tab-button" onclick="openTab('personajes-clave')">Personajes Clave</button></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div id="definicion" class="tab-content">
+            <h2>Definición</h2>
+            <p>Una Dirección IP (Protocolo de Internet) es una etiqueta numérica que se asigna a cada dispositivo que está conectado a una red basada en IP. Su propósito principal es identificar de manera única cada dispositivo en una red y permitir la comunicación entre ellos. Una dirección IP funciona en el nivel de red del modelo OSI y se utiliza tanto en la transmisión de datos como en la gestión de la red.</p>
+            <img src="data:image/png;base64,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" alt="Dirección IP">
+        </div>
+
+        <div id="historia" class="tab-content">
+            <h2>Historia</h2>
+            <h3>Orígenes:</h3>
+            <p>ARPANET y el Inicio: En la década de 1970, ARPANET, la precursora de Internet, usaba un protocolo llamado NCP (Network Control Program) para la comunicación entre sus nodos. Sin embargo, el crecimiento de la red y la necesidad de una comunicación más robusta llevaron a la creación de un nuevo protocolo.</p>
+            <p>Creación del Protocolo de Internet: En 1974, Vint Cerf y Bob Kahn propusieron el Protocolo de Control de Transmisión (TCP) y el Protocolo de Internet (IP) en un documento fundamental titulado "A Protocol for Packet Network Intercommunication". Esto sentó las bases para el protocolo de comunicación de redes modernas.</p>
+            <h3>Evolución:</h3>
+            <p>IPv4: En 1981, el estándar IPv4 (Protocolo de Internet versión 4) fue publicado en la RFC 791. IPv4 usa direcciones de 32 bits, lo que permite alrededor de 4.3 mil millones de direcciones únicas.</p>
+            <p>Problemas de Escalabilidad: A medida que Internet creció, se hizo evidente que el número de direcciones IPv4 disponibles no era suficiente para todos los dispositivos conectados.</p>
+            <p>IPv6: En 1998, la IETF (Internet Engineering Task Force) aprobó IPv6, que usa direcciones de 128 bits, permitiendo un espacio de direcciones mucho mayor (aproximadamente 340 undecillones de direcciones).</p>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT52dJ48TStYjIt8t-xUyXCFdheD7Rqg-sgqA&s" alt="Historia de IP">
+        </div>
+
+        <div id="caracteristicas" class="tab-content">
+            <h2>Características</h2>
+            <h3>Formato y Notación:</h3>
+            <p>IPv4: Se representa en notación decimal con puntos (dotted-decimal notation), por ejemplo, 192.168.1.1. Está compuesto por cuatro octetos (8 bits cada uno).</p>
+            <p>IPv6: Se representa en notación hexadecimal con dos puntos, por ejemplo, 2001:0db8:85a3:0000:0000:8a2e:0370:7334. Está compuesto por ocho grupos de cuatro dígitos hexadecimales.</p>
+            <h3>Tipos de Direcciones:</h3>
+            <p>IPv4: Incluye direcciones unicast (una sola dirección de destino), broadcast (dirección para enviar a todos los nodos en una red local) y multicast (dirección para enviar a un grupo específico de nodos).</p>
+            <p>IPv6: No usa broadcast, pero incluye direcciones unicast (global, local y enlace), multicast y anycast (una dirección asignada a un grupo de interfaces, donde los paquetes se envían a la más cercana).</p>
+            <h3>Asignación de Direcciones:</h3>
+            <p>Estática: Direcciones asignadas manualmente y que no cambian.</p>
+            <p>Dinámica: Asignadas automáticamente mediante DHCP (Dynamic Host Configuration Protocol) en IPv4 o SLAAC (Stateless Address Autoconfiguration) en IPv6.</p>
+        </div>
+
+        <div id="ventajas-desventajas" class="tab-content">
+            <h2>Ventajas y Desventajas</h2>
+            <h3>Ventajas:</h3>
+            <h4>IPv4:</h4>
+            <ul>
+                <li>Simplicidad: Implementación y manejo más sencillo.</li>
+                <li>Compatibilidad: Amplia compatibilidad con hardware y software existente.</li>
+            </ul>
+            <h4>IPv6:</h4>
+            <ul>
+                <li>Espacio de Direcciones: Ofrece un número casi ilimitado de direcciones, solucionando el problema de agotamiento de direcciones IPv4.</li>
+                <li>Mejoras en Seguridad: Incorpora IPsec para mejorar la seguridad de las comunicaciones.</li>
+                <li>Eficiencia en la Ruta: Mejora el enrutamiento y la configuración automática de direcciones.</li>
+            </ul>
+            <h3>Desventajas:</h3>
+            <h4>IPv4:</h4>
+            <ul>
+                <li>Escasez de Direcciones: Limitación en el número de direcciones disponibles.</li>
+                <li>Necesidad de NAT: El uso de Traducción de Direcciones de Red (NAT) puede complicar la comunicación directa entre dispositivos.</li>
+            </ul>
+            <h4>IPv6:</h4>
+            <ul>
+                <li>Compatibilidad: No es directamente compatible con IPv4, lo que puede llevar a problemas de interoperabilidad.</li>
+                <li>Complejidad de Implementación: La transición de IPv4 a IPv6 puede ser costosa y compleja para redes grandes.</li>
+            </ul>
+        </div>
+
+        <div id="personajes-clave" class="tab-content">
+            <h2>Personajes Clave</h2>
+            <ul>
+                <li>Vint Cerf: Conocido como uno de los padres de Internet, Cerf, junto con Bob Kahn, desarrolló el TCP/IP, que es la base de la comunicación en Internet.</li>
+                <li>Bob Kahn: Co-desarrollador del TCP/IP junto con Vint Cerf. Su trabajo ha sido fundamental en la creación de la arquitectura de red moderna.</li>
+                <li>Jon Postel: Conocido por su trabajo en el desarrollo y la gestión de protocolos de Internet. Fue el editor principal de muchas de las RFCs (Request for Comments) que definen los estándares de Internet, incluyendo el RFC 791 que especifica IPv4.</li>
+                <li>Sandy Murphy: Co-desarrolladora de la especificación IPv6 y una figura clave en la transición a IPv6.</li>
+                <li>IETF (Internet Engineering Task Force): Un organismo clave en la estandarización y evolución de los protocolos de Internet, incluyendo el desarrollo de IPv6.</li>
+            </ul>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 jose miguel portillo perez. Todos los derechos reservados.</p>
+    </footer>
+
+    <script>
+        function openTab(tabId) {
+            // Oculta todas las pestañas
+            var tabs = document.querySelectorAll('.tab-content');
+            tabs.forEach(function(tab) {
+                tab.style.display = 'none';
+            });
+
+            // Muestra la pestaña seleccionada
+            document.getElementById(tabId).style.display = 'block';
+        }
+
+        // Muestra la pestaña por defecto (Definición)
+        document.addEventListener('DOMContentLoaded', function() {
+            openTab('definicion');
+        });
+    </script>
+</body>
+</html>
